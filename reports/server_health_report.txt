@@ -2,17 +2,17 @@
      LINUX SERVER HEALTH MONITORING
 =========================================
 Hostname: ubuntuserver
-Date: Fri Nov 13 02:45:01 PM UTC 2026
+Date: Fri Nov 13 02:55:01 PM UTC 2026
 =========================================
 
 ------------ CPU INFORMATION ------------
 CPU Count: 1
 System Load:
- 14:45:01 up  3:04,  2 users,  load average: 0.24, 0.05, 0.02
+ 14:55:01 up  3:14,  2 users,  load average: 0.08, 0.15, 0.07
 
 ---------- MEMORY INFORMATION -----------
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       317Mi       1.4Gi       1.4Mi       331Mi       1.6Gi
+Mem:           1.9Gi       350Mi       1.0Gi       1.4Mi       765Mi       1.6Gi
 Swap:          2.0Gi          0B       2.0Gi
 
 ----------- DISK UTILIZATION ------------
@@ -22,7 +22,7 @@ Filesystem                         Size  Used Avail Use% Mounted on
 ---------- RESOURCE HEALTH STATUS ----------
 CPU Usage: 0.0%
 CPU Status: HEALTHY
-RAM Usage: 16.1%
+RAM Usage: 17.9%
 RAM Status: HEALTHY
 Disk Usage: 52%
 Disk Status: HEALTHY
@@ -35,16 +35,16 @@ SSH Service: RUNNING
 Apache Service: RUNNING
 
 --------- RECENT SYSTEM LOGS ------------
-Nov 13 14:40:01 ubuntuserver systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
-Nov 13 14:40:01 ubuntuserver systemd[1]: sysstat-collect.service: Deactivated successfully.
-Nov 13 14:40:01 ubuntuserver systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
-Nov 13 14:40:02 ubuntuserver CRON[2179]: (CRON) info (No MTA installed, discarding output)
-Nov 13 14:40:02 ubuntuserver CRON[2179]: pam_unix(cron:session): session closed for user supermann
-Nov 13 14:45:01 ubuntuserver CRON[2213]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
-Nov 13 14:45:01 ubuntuserver CRON[2215]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
-Nov 13 14:45:01 ubuntuserver CRON[2214]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
-Nov 13 14:45:01 ubuntuserver CRON[2216]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
-Nov 13 14:45:01 ubuntuserver CRON[2213]: pam_unix(cron:session): session closed for user root
+Nov 13 14:53:20 ubuntuserver systemd[993]: Starting dbus.service - D-Bus User Message Bus...
+Nov 13 14:53:20 ubuntuserver dbus-daemon[2702]: [session uid=1000 pid=2702] AppArmor D-Bus mediation is enabled
+Nov 13 14:53:20 ubuntuserver systemd[993]: Started dbus.service - D-Bus User Message Bus.
+Nov 13 14:53:55 ubuntuserver systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+Nov 13 14:53:55 ubuntuserver fwupdmgr[2706]: Updating lvfs
+Nov 13 14:55:01 ubuntuserver CRON[2721]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 13 14:55:01 ubuntuserver CRON[2722]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
+Nov 13 14:55:01 ubuntuserver CRON[2725]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
+Nov 13 14:55:01 ubuntuserver CRON[2726]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Nov 13 14:55:01 ubuntuserver CRON[2721]: pam_unix(cron:session): session closed for user root
 
 =========================================
          HEALTH CHECK COMPLETED
