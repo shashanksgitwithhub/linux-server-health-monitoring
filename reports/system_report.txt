@@ -1,0 +1,11 @@
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       318Mi       1.4Gi       1.4Mi       415Mi       1.6Gi
+Swap:          2.0Gi          0B       2.0Gi
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              197M  1.1M  196M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.4G  5.3G  51% /
+tmpfs                              985M     0  985M   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          2.0G  200M  1.6G  11% /boot
+tmpfs                              197M   12K  197M   1% /run/user/1000
+ 07:32:55 up  2:50,  3 users,  load average: 0.15, 0.07, 0.04
