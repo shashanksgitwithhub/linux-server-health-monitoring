@@ -2,17 +2,17 @@
      LINUX SERVER HEALTH MONITORING
 =========================================
 Hostname: ubuntuserver
-Date: Fri Nov 13 01:30:02 PM UTC 2026
+Date: Fri Nov 13 02:45:01 PM UTC 2026
 =========================================
 
 ------------ CPU INFORMATION ------------
 CPU Count: 1
 System Load:
- 13:30:02 up  1:49,  2 users,  load average: 0.01, 1.20, 2.89
+ 14:45:01 up  3:04,  2 users,  load average: 0.24, 0.05, 0.02
 
 ---------- MEMORY INFORMATION -----------
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       327Mi       1.4Gi       1.4Mi       324Mi       1.6Gi
+Mem:           1.9Gi       317Mi       1.4Gi       1.4Mi       331Mi       1.6Gi
 Swap:          2.0Gi          0B       2.0Gi
 
 ----------- DISK UTILIZATION ------------
@@ -20,9 +20,9 @@ Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.5G  5.2G  52% /
 
 ---------- RESOURCE HEALTH STATUS ----------
-CPU Usage: 14.3%
+CPU Usage: 0.0%
 CPU Status: HEALTHY
-RAM Usage: 16.6%
+RAM Usage: 16.1%
 RAM Status: HEALTHY
 Disk Usage: 52%
 Disk Status: HEALTHY
@@ -35,16 +35,16 @@ SSH Service: RUNNING
 Apache Service: RUNNING
 
 --------- RECENT SYSTEM LOGS ------------
-Nov 13 13:28:58 ubuntuserver 50-motd-news[1677]:  * Canonical Workshop gives developers fast, composable, reproducible, and
-Nov 13 13:28:58 ubuntuserver 50-motd-news[1677]:    secure developer environments that are perfect for agentic workflows.
-Nov 13 13:28:58 ubuntuserver 50-motd-news[1677]:    https://ubuntu.com/workshop
-Nov 13 13:28:58 ubuntuserver systemd[1]: motd-news.service: Deactivated successfully.
-Nov 13 13:28:58 ubuntuserver systemd[1]: Finished motd-news.service - Message of the Day.
-Nov 13 13:30:01 ubuntuserver systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
-Nov 13 13:30:01 ubuntuserver systemd[1]: sysstat-collect.service: Deactivated successfully.
-Nov 13 13:30:01 ubuntuserver systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
-Nov 13 13:30:02 ubuntuserver CRON[1694]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
-Nov 13 13:30:02 ubuntuserver CRON[1695]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
+Nov 13 14:40:01 ubuntuserver systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Nov 13 14:40:01 ubuntuserver systemd[1]: sysstat-collect.service: Deactivated successfully.
+Nov 13 14:40:01 ubuntuserver systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Nov 13 14:40:02 ubuntuserver CRON[2179]: (CRON) info (No MTA installed, discarding output)
+Nov 13 14:40:02 ubuntuserver CRON[2179]: pam_unix(cron:session): session closed for user supermann
+Nov 13 14:45:01 ubuntuserver CRON[2213]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 13 14:45:01 ubuntuserver CRON[2215]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Nov 13 14:45:01 ubuntuserver CRON[2214]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
+Nov 13 14:45:01 ubuntuserver CRON[2216]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
+Nov 13 14:45:01 ubuntuserver CRON[2213]: pam_unix(cron:session): session closed for user root
 
 =========================================
          HEALTH CHECK COMPLETED
