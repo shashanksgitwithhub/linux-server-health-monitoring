@@ -2,17 +2,17 @@
      LINUX SERVER HEALTH MONITORING
 =========================================
 Hostname: ubuntuserver
-Date: Mon Nov 16 07:30:02 AM UTC 2026
+Date: Mon Nov 16 07:35:02 AM UTC 2026
 =========================================
 
 ------------ CPU INFORMATION ------------
 CPU Count: 1
 System Load:
- 07:30:02 up 29 min,  2 users,  load average: 0.00, 0.04, 0.06
+ 07:35:02 up 34 min,  2 users,  load average: 0.05, 0.09, 0.08
 
 ---------- MEMORY INFORMATION -----------
                total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       318Mi       1.4Gi       1.4Mi       372Mi       1.6Gi
+Mem:           1.9Gi       318Mi       1.4Gi       1.4Mi       373Mi       1.6Gi
 Swap:          2.0Gi          0B       2.0Gi
 
 ----------- DISK UTILIZATION ------------
@@ -20,31 +20,31 @@ Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.5G  5.2G  52% /
 
 ---------- RESOURCE HEALTH STATUS ----------
-CPU Usage: 100.0%
-CPU Status: WARNING
+CPU Usage: 53.8%
+CPU Status: HEALTHY
 RAM Usage: 16.2%
 RAM Status: HEALTHY
 Disk Usage: 52%
 Disk Status: HEALTHY
 
 ---------- OVERALL RESOURCE STATUS ----------
-Overall Resource Status: WARNING
+Overall Resource Status: HEALTHY
 
 ----------- SERVICE STATUS --------------
 SSH Service: RUNNING
 Apache Service: RUNNING
 
 --------- RECENT SYSTEM LOGS ------------
-Nov 16 07:25:02 ubuntuserver CRON[1447]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
-Nov 16 07:25:02 ubuntuserver CRON[1449]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
-Nov 16 07:25:02 ubuntuserver CRON[1446]: pam_unix(cron:session): session closed for user root
-Nov 16 07:25:04 ubuntuserver CRON[1447]: (CRON) info (No MTA installed, discarding output)
-Nov 16 07:25:04 ubuntuserver CRON[1447]: pam_unix(cron:session): session closed for user supermann
-Nov 16 07:30:01 ubuntuserver CRON[1480]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
-Nov 16 07:30:01 ubuntuserver CRON[1481]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
-Nov 16 07:30:01 ubuntuserver systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
 Nov 16 07:30:02 ubuntuserver systemd[1]: sysstat-collect.service: Deactivated successfully.
 Nov 16 07:30:02 ubuntuserver systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Nov 16 07:30:03 ubuntuserver CRON[1480]: (CRON) info (No MTA installed, discarding output)
+Nov 16 07:30:03 ubuntuserver CRON[1480]: pam_unix(cron:session): session closed for user supermann
+Nov 16 07:30:04 ubuntuserver kernel: workqueue: blk_mq_run_work_fn hogged CPU for >20000us 16 times, consider switching to WQ_UNBOUND
+Nov 16 07:35:01 ubuntuserver CRON[1567]: pam_unix(cron:session): session opened for user supermann(uid=1000) by supermann(uid=0)
+Nov 16 07:35:01 ubuntuserver CRON[1566]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 16 07:35:01 ubuntuserver CRON[1568]: (supermann) CMD (/home/supermann/linux-server-health-monitoring/scripts/health_check.sh)
+Nov 16 07:35:01 ubuntuserver CRON[1569]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Nov 16 07:35:02 ubuntuserver CRON[1566]: pam_unix(cron:session): session closed for user root
 
 =========================================
          HEALTH CHECK COMPLETED
